@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Parks</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+</head>
+<body>
+    <header class="title">
+        <h1>Find State Parks</h1>
+    </header>
+    <div class="mainPage">
+        <form id="parks">
+            <label for="state-Entry">State Code
+                <input type="text" name="stateEntry" id="stateEntry" placeholder="CO, TX, ETC." required>
+            </label>
+            <label for="max-Results">Max # of Results
+                <input type="number" name="maxResults" id="maxResults" placeholder="10">
+            </label>
+            <input type="submit" id="submit" value="Search">
+        </form>
+    </div>
+    <section id="resultBox">
+        <h2>Search Results Below</h2>
+        <ul id="results"></ul>
+    </section>
+   
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>  
+</body>
+</html>
